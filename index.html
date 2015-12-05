@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <!--
 Welcome to the source code for letsgetssl.com!
@@ -20,46 +20,96 @@ Third-party libraries (all from asn1.js package):
 Released under MIT License. Enjoy!
 -->
 <head>
-    <title>Get HTTPS for free!</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="icon" type="image/png" href="https://cdn.discourse.org/business/uploads/letsencrypt/original/1X/8529b324ee54a8f85c38260975250e39582cfefe.png">
-    <link rel="apple-touch-icon" type="image/png" href="https://cdn.discourse.org/business/uploads/letsencrypt/original/1X/8529b324ee54a8f85c38260975250e39582cfefe.png">
-    <link rel="icon" sizes="144x144" href="https://cdn.discourse.org/business/uploads/letsencrypt/original/1X/8529b324ee54a8f85c38260975250e39582cfefe.png">
+    <title>Lets Get SSL - Free SSL using Let&apos;s Encrypt Certification Authority</title>
+    <meta name="description" content="Generate SSL Certificate Using Let's Encrypt Certification Authority" />
+    <meta name="keywords" content="free ssl, ssl, certificate, secure ssl, lets encrypt, letsencrypt" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+    <link rel="icon" type="image/png" href="style/icon.png">
+    <link rel="apple-touch-icon" type="image/png" href="style/icon.png">
+    <link rel="icon" sizes="144x144" href="style/icon.png">
     <style>
-        *{box-sizing:border-box;}
-        div{margin:15px 0px;}
-        .error{color:#ff1111;}
-        .field{width:100%;max-width:600px;}
-        body{background-color:#fafafa;}
-        li{margin-bottom:10px;}
-        h1{border-bottom:solid black 1px;padding-bottom:15px;}
-        input[type="text"]{width:100%;}
-        textarea{width:100%;height:120px;white-space:pre;}
-        .help{float:right;font-size:12px;}
-        .help-content{display:inline-block;width:100%;max-width:600px;margin:5px 0px 10px 0px;padding:10px;background-color:#eeeeee;border:2px solid #bbbbbb;}
-        code{display:inline-block;margin:5px 0px;padding:5px;background-color:#ffffff;}
-        pre{margin:5px 0px;padding:5px;overflow:auto;background-color:#ffffff;}
-        .tabsection{margin:0px;}
-        .options{margin:0px;padding:0px;}
-        .options li{display:inline-block;margin:0px;padding:0px;}
-        .options a{display:inline-block;margin:0px;padding:6px 12px;font-size:13px;}
-        .options a.active{background-color:#eeeeee;}
-        .tab{background-color:#eeeeee;margin:0px;padding:15px 15px 1px 15px;}
-        .tab .help-content{background-color:#ffffff;}
-        .tab .help-content a{display:inline-block;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-        .tab code{background-color:#eeeeee;}
-        .tab pre{background-color:#eeeeee;}
-        .tab textarea{height:105px;}
-        .footer{font-size:12px;}
+		.error{color:#ff1111;}
+		.field{width:100%;max-width:600px;margin: 15px 0;float: left;}
+		body{background-color:#fafafa;}
+		li{margin-bottom:10px;}
+		h1{border-bottom:solid #E1E1E1 1px;padding-bottom:15px;}
+		input[type="text"]{width:100%;box-sizing: border-box;padding: 7px;border: 1px solid #eee;}
+		textarea{width:100%;height:120px;white-space:pre;box-sizing: border-box;padding: 7px;border: 1px solid #eee;}
+		.help{float:right;font-size:12px;}
+		.help-content{display:inline-block;width:100%;max-width:600px;margin:5px 0px 10px 0px;padding:10px;background-color:#eeeeee;border:2px solid #bbbbbb;float: left;box-sizing: border-box;}
+		code{display:inline-block;margin:5px 0px;padding:5px;background-color:#ffffff;}
+		pre{margin:5px 0px;padding:5px;overflow:auto;background-color:#ffffff;}
+		.tabsection{margin:0px;}
+		.options{margin:0px;padding:0px;}
+		.options li{display:inline-block;margin:0px;padding:0px;}
+		.options a{display:inline-block;margin:0px;padding:6px 12px;font-size:13px;}
+		.options a.active{background-color:#eeeeee;}
+		.tab{background-color:#eeeeee;margin:0px;padding:15px 15px 1px 15px;}
+		.tab .help-content{background-color:#ffffff;}
+		.tab .help-content a{display:inline-block;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+		.tab code{background-color:#eeeeee;}
+		.tab pre{background-color:#eeeeee;}
+		.tab textarea{height:105px;}
+		.footer{font-size:12px;}
     </style>
     <script src="js/asn1js/int10.js"></script>
     <script src="js/asn1js/base64.js"></script>
     <script src="js/asn1js/hex.js"></script>
     <script src="js/asn1js/asn1.js"></script>
 </head>
-<body>
 
-    <!--#############-->
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+      	<div id="logo_img">
+        	<a href="index.html"> <img src="style/icon.png" /> </a>
+        </div>
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Let's Get SSL</a></h1>
+          <h2>Free SSL certificate by Let's Encrypt Authority.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="https://www.nitinyawalkar.com" target="_blank">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <div class="widget">
+            <h3>Support Development</h3>
+            <div class="donate"><a target="_blank" href="https://www.paypal.com/cgi-bin/webscr&business=nitiny892@gmail.com&cmd=_donations&item_name=Friends+of+Nitin+Yawalkar"><img src="style/donate.png"></a></div>
+        </div>
+       <!-- <div class="widget">
+            <h3>Latest News</h3>
+            <h4>New Website Launched</h4>
+            <h5>September 1st, 2013</h5>
+            <p>2013 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+            <p></p>
+            <h4>New Website Launched</h4>
+            <h5>September 1st, 2013</h5>
+            <p>2013 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
+		</div> -->
+        <div class="widget">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="https://letsencrypt.org/">letsencrypt.org</a></li>
+              <li><a href="https://letsgetssl.com/">letsgetssl.com</a></li>
+              <li><a href="https://letsgetssl.net/">letsgetssl.net</a></li>
+              <li><a href="https://www.nitinyawalkar.com/">nitinyawalkar.com</a></li>
+            </ul>
+		</div>
+       
+      </div>
+      <div id="content">
+        <!--#############-->
     <!--##  Intro  ##-->
     <!--#############-->
     <h1>Get HTTPS for free!</h1>
@@ -68,27 +118,27 @@ Released under MIT License. Enjoy!
         needs WebCryptoAPI's crypto.subtle.digest()). Please upgrade to a modern
         browser (Firefox, Chrome, Safari, IE 11+).
     </h2>
-    <div>
+    <p>
         You can now get free https certificates from the non-profit certificate
         authority <a href="https://letsencrypt.org/" target="_blank">Let's Encrypt</a>!
         This is a website that will take you through the manual steps to get your free
         https certificate so you can make your own website use https! This website is
-        <a href="https://github.com/diafygi/howtogetfreehttps" target="_blank">open source</a>
+        <a href="https://github.com/yawalkar/Letsgetssl" target="_blank">open source</a>
         and <strong>NEVER</strong> asks for your private keys. Never trust a website
         that asks for your private keys!
         <!--TODO-->
         <!--<a href="renew.html">Click here</a> to renew certs.-->
         <!--<a href="revoke.html">Click here</a> to revoke certs.-->
-    </div>
+    </p>
 
-    <div>
+    <p>
         <b>NOTE: This website is for people who know how to generate certificate signing
         requests (CSRs)!</b> If you're not familiar with how to do this, please use the
         official Let's Encrypt <a href="https://github.com/letsencrypt/letsencrypt" target="_blank">client</a>
         that can automatically issue and install https certificates for you. This
         website is designed for people who know what they are doing and just want to get
         their free https certificate.
-    </div>
+    </p>
 
     <hr/>
 
@@ -96,13 +146,13 @@ Released under MIT License. Enjoy!
     <!--##  Step 1: Account Info  ##-->
     <!--############################-->
     <h2>Step 1: Account Info</h2>
-    <div>
+    <p>
         Let's Encrypt requires that you register an account email and public key before
         issuing a certificate. The email is so that they can contact you if needed, and
         the public key is so you can securely sign your requests to issue/revoke/renew
         your certificates. <i><b>Keep your account private key secret!</b> Anyone who has it
         can impersonate you when making requests to Let's Encrypt!</i>
-    </div>
+    </p>
 
     <div class="field">
         <label for="email">Account Email:</label><br/>
@@ -133,7 +183,7 @@ Released under MIT License. Enjoy!
     </div>
 
     <div class="field">
-        <input id="validate_account" type="submit" value="Validate Account Info"/>
+        <input id="validate_account" type="submit" class="submit-button" value="Validate Account Info"/>
         <span id="validate_account_status" style="display:none;"></span>
     </div>
 
@@ -143,12 +193,12 @@ Released under MIT License. Enjoy!
     <!--##  Step 2: Certificate Signing Request  ##-->
     <!--###########################################-->
     <h2>Step 2: Certificate Signing Request</h2>
-    <div>
+    <p>
         This is the certificate signing request (CSR) that you send to Let's Encrypt
         in order to issue you a signed certificate. It contains the website domains you
         want to issue certs for and the public key of your TLS private key. <i><b>Keep your
         TLS private key secret!</b> Anyone who has it can man-in-the-middle your website!</i>
-    </div>
+    </p>
 
     <div class="field">
         <a id="howto_csr" class="help" href="#">(how do I generate this?)</a>
@@ -185,7 +235,7 @@ openssl req -new -sha256 -key domain.key -subj "/" \
     </div>
 
     <div class="field">
-        <input id="validate_csr" type="submit" value="Validate CSR"/>
+        <input id="validate_csr" type="submit" class="submit-button" value="Validate CSR"/>
         <span id="validate_csr_status" style="display:none;"></span>
     </div>
 
@@ -196,13 +246,13 @@ openssl req -new -sha256 -key domain.key -subj "/" \
     <!--#############################-->
     <h2>Step 3: Sign API Requests<span id="step3_pending"> (waiting...)</span></h2>
     <div id="step3" style="display:none;">
-        <div>
+        <p>
             Let's Encrypt requires that you sign all of your requests to them with your
             account private key. Below are the requests that you will need to sign. The
             commands to do this are generated below so you can copy-and-paste them into your
             terminal. <i>Be sure to change the account private key location so it points to
             your real private key.</i>
-        </div>
+        </p>
 
         <div class="field">
             <a id="howto_sign1" class="help" href="#">(how do I do this?)</a>
@@ -230,7 +280,7 @@ openssl req -new -sha256 -key domain.key -subj "/" \
         </div>
 
         <div class="field">
-            <input id="validate_initial_sigs" type="submit" value="Validate Signatures"/>
+            <input id="validate_initial_sigs" type="submit" class="submit-button" value="Validate Signatures"/>
             <span id="validate_initial_sigs_status" style="display:none;"></span>
         </div>
     </div>
@@ -242,7 +292,7 @@ openssl req -new -sha256 -key domain.key -subj "/" \
     <!--##########################-->
     <h2>Step 4: Verify Ownership<span id="step4_pending"> (waiting...)</span></h2>
     <div id="step4" style="display:none;">
-        <div>
+        <p>
             Let's Encrypt requires you prove you own the domains you have in your CSR. You
             can do this by serving a specific file at a specific url under your domains.
             Below are the files you need to serve along with some copy-and-paste commands
@@ -254,7 +304,7 @@ openssl req -new -sha256 -key domain.key -subj "/" \
             this are generated below so you can copy-and-paste them into your terminal.
             <i>Be sure to change the account private key location so it points to your real
             private key.</i>
-        </div>
+        </p>
 
         <div id="challenge_domains">
         </div>
@@ -325,7 +375,7 @@ openssl req -new -sha256 -key domain.key -subj "/" \
                     <label>Run this command on <span class="domain">foobar.com</span>'s server:</label><br/>
                     <textarea readonly></textarea>
                     <div>
-                        <input type="submit" value="I'm now running this command on foobar.com"/>
+                        <input type="submit" class="submit-button" value="I'm now running this command on foobar.com"/>
                         <span style="display:none;"></span>
                     </div>
                 </div>
@@ -369,7 +419,7 @@ openssl req -new -sha256 -key domain.key -subj "/" \
                         <input type="text" class="file_data" value="" readonly/>
                     </div>
                     <div>
-                        <input type="submit" class="file_submit" value="I'm now serving this file on foobar.com"/>
+                        <input type="submit" class="submit-button" class="file_submit" value="I'm now serving this file on foobar.com"/>
                         <span style="display:none;"></span>
                     </div>
                 </div>
@@ -382,12 +432,12 @@ openssl req -new -sha256 -key domain.key -subj "/" \
     <!--#################################-->
     <!--##  Step 5: Issue Certificate  ##-->
     <!--#################################-->
-    <h2>Step 5: Install Certificate (<span id="step5_pending">waiting...</span>)</h2>
+    <h2>Step 5: Install Certificate <span id="step5_pending">( waiting... )</span></h2>
     <div id="step5" style="display:none;">
-        <div>
+        <p>
             Congratulations! Let's Encrypt has issued you a certificate for your domains!
             Below is the signed certificate you can use on your website to
-        </div>
+        </p>
 
         <div class="field">
             <a id="howto_install" class="help" href="#">(how do I install this?)</a>
@@ -478,7 +528,7 @@ f1w8DdnkabOLGeOVcj9LQ+s67vBykx4anTjURkbqZslUEUsn2k5xeua2zUk=
         <div class="field">
             <form action="https://www.ssllabs.com/ssltest/analyze.html" target="_blank">
                 <input id="ssltest_domain" type="hidden" name="d" value="foobar.com">
-                <input type="submit" value="Test my install"/>
+                <input type="submit" class="submit-button" value="Test my install"/>
             </form>
         </div>
     </div>
@@ -486,11 +536,27 @@ f1w8DdnkabOLGeOVcj9LQ+s67vBykx4anTjURkbqZslUEUsn2k5xeua2zUk=
     <hr/>
 
     <div class="footer">
+    	<p>
         This website is static, so it can be saved and loaded locally. Just right-click and "Save Page As.."!<br/>
-        Released under MIT license | Source code: <a href="https://github.com/yawalkar/Letsgetssl" target="_blank">https://github.com/yawalkar/Letsgetssl</a>
-        <br/>
-        Hosted By: <a href="https://www.nitinyawalkar.com" title="Nitin Yawalkar">Nitin Yawalkar</a>
+        </p>
     </div>
     <script src="js/index.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-71061754-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+      </div>
+    </div>
+    <div id="footer">
+      Copyright &copy; <a href="https://letsgetssl.com">Letsgetssl.com</a> |  Released under MIT license
+      <hr/> Source code: <a href="https://github.com/yawalkar/Letsgetssl" target="_blank">https://github.com/yawalkar/Letsgetssl</a>  | Hosted By: <a href="https://www.nitinyawalkar.com" title="Nitin Yawalkar">Nitin Yawalkar</a>
+    </div>
+  </div>
 </body>
 </html>
