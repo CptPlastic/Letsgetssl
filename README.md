@@ -1,6 +1,6 @@
 # Get HTTPS for free!
 
-Website: https://gethttpsforfree.com
+Website: https://letsgetssl.com
 
 This is a project that allows you to get a free HTTPS certificate without
 having to install any software or having to share your private keys with anyone.
@@ -16,7 +16,7 @@ but they do fantastic work.
 
 ##How to use this website
 
-Go to: https://gethttpsforfree.com
+Go to: https://letsgetssl.com
 
 The website works by generating commands for you to run in your terminal, then
 making requests to the Let's Encrypt ACME API to issue your certificate. Simply
